@@ -1,0 +1,339 @@
+// COLORS //
+
+$light-grey: #efefef;
+$grey: #666;
+$dark-grey: #303132;
+$orange: #FF3F00;
+$pink: #E882B6;
+$light-blue: #50C8F0;
+$blue: #2EA5DA;
+$seafoam: #B4D5A2;
+$red: #dd0017;
+
+// Background Colors
+
+.light-grey {
+    background-color: $light-grey;
+}
+
+// Text Colors
+
+.blue-text {
+    color: $blue;
+}
+
+.orange-text {
+    color: $orange;
+}
+
+.seafoam-text {
+    color: $seafoam;
+}
+
+// LAYOUT //
+
+body {
+    font: 75%/1.231 "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: auto;
+    padding: auto;
+    max-width: 960px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: black;
+}
+
+nav {
+    background-color: $dark-grey;
+    color: white;
+    width: 100%;
+
+    li {
+        display: inline-block;
+        margin-right: 1px solid $light-grey;
+        width: 10%;
+    }
+}
+
+.sub-nav li {
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.policies {
+    clear:both;
+
+    div {
+        background-color: $light-grey;
+        height: 90px;
+        width: 30%;
+    }
+}
+
+// PADDING //
+
+section {
+    padding: 14px;
+}
+
+div {
+    padding: 14px;
+}
+
+.featured {
+    padding: 0px;
+
+    div.one-of-three {
+        padding: 0px;
+    }
+}
+
+.shipping-icons {
+    padding: 0px;
+}
+
+.shipping-icon {
+    &:first-child {
+        padding: 0;
+    }
+
+    &:last-child {
+        padding: 0;
+    }
+}
+
+.browse {
+    padding: 2px;
+}
+
+.home {
+    width: 60%;
+}
+
+footer {
+    li {
+        margin-bottom: 8px;
+    }
+
+    div {
+        padding: 10px;
+    }
+}
+
+// UNIVERSAL //
+
+.meta {
+    color: $grey;
+    font-size: 11px;
+
+    a {
+        color: $grey;
+
+        &:hover {
+            color: black;
+        }
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+li {
+    list-style: none;
+}
+
+// POSITIONING //
+
+.float-right {
+    float: right;
+    text-align: right;
+}
+
+.float-left {
+    float:left;
+    position: relative;
+}
+
+.inline {
+    display: inline-block;
+    position: relative;
+}
+
+.clear {
+    clear:both;
+}
+
+// LINKS //
+
+a {
+    color: $grey;
+    text-decoration: none;
+}
+
+a.hover-pink:hover {
+    div {
+        background-color: $pink;
+    }
+}
+
+a.hover-orange:hover {
+    div {
+        background-color: $orange;
+    }
+}
+
+a.hover-blue:hover {
+    div {
+        background-color: $blue;
+    }
+}
+
+.sub-nav a:hover {
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: black;
+}
+
+// BORDERS //
+
+.dotted-border {
+    border: 1px dotted $dark-grey;
+}
+
+// GRID //
+
+.col {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+.one-of-one {
+    width: 100%;
+}
+
+.one-of-two {
+    width: 46.65%;
+}
+
+.one-of-three {
+    width: 33%;
+}
+
+.two-of-three, .four-of-six {
+    width: 63%;
+}
+
+.one-of-four {
+    width: 24%;
+}
+
+.one-of-six {
+    width: 16.66%;
+}
+
+.shipping-icon {
+    width: 31%;
+}
+
+.home, .fun {
+    padding-bottom: 18px;
+    width: 54.75%;
+}
+
+.art, .furniture, .jewelry, .food {
+    width: 38.65%;
+}
+
+.most-popular {
+    width: 59%;
+}
+
+// TYPOGRAPHY //
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.social {
+    text-align: center;
+
+    p {
+        font-size: 15px;
+    }
+}
+
+.shipping-text {
+
+    div {
+        padding: 0;
+        width: 100%;
+    }
+
+    font-size: 30px;
+}
+
+footer h2 {
+    color: $grey;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+// IMAGES ///
+
+img {
+    width: 100%;
+}
+
+// BUTTONS //
+
+button {
+    background-color: $red;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 10px;
+}
+
+// SPECIFIC ELEMENTS //
+
+.title-top {
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+
+    h1 {
+        color: white;
+        line-height: 0;
+        opacity: 1;
+    }
+
+    h2 {
+        line-height: 10px;
+    }
+}
+
+.title-bottom {
+    background-color: black;
+    bottom: 17px;
+    color: white;
+    font-size: 14px;
+    opacity: 0.5;
+    position: absolute;
+}
