@@ -6,25 +6,34 @@
 
         <title>Fab Responsive Home</title>
 
-        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="styles/styles.css" rel="stylesheet" type="text/css">
 
     </head>
     <body>
         <header>
             <div class="meta">
-                Free Shipping. Free Returns. Smile Guarantee.
+                <img src="images/smile-top.png">
+                <p class="meta-top inline">Free Shipping. Free Returns. Smile Guarantee.</p>
                 <span class="float-right">
-                    1-877-463-4322
-                    Email Us
+                    <img src="images/phone.png">
+                    <p class="meta-top inline">1-877-463-4322</p>
+                    <img src="images/mail.png">
+                    <p class="meta-top inline">Email Us</p>
                 </span>
             </div>
             <div class="header">
-                <form class="search">
+                <div class="menu inline one-of-twelve red-hover"><span class="icon-menu"></span></div>
+                <form class="search inline one-of-six">
                     <input type="search" placeholder="Search Fab">
                 </form>
-                <span class="logo">
-                    IMAGE HERE
-                </span>
+                <a href="#">
+                    <div class="logo inline one-of-two">
+                        <img src="images/logo.png">
+                    </div>
+                </a>
+                <a href="#"><div class="inline red-hover one-of-twelve"><span class="icon-smile"></span></div></a>
+                <a href="#"><div class="inline red-hover one-of-twelve"><span class="icon-hash"></span></div></a>
+                <a href="#"><div class="inline red-hover one-of-twelve login"><span class="icon-lock"></span> Login</div></a>
             </div>
             <nav class="main-nav">
                 <ul>
@@ -139,20 +148,22 @@
             <section class="policies dotted-border clear">
                 <a href="#" class="hover-blue">
                     <div class="free-shipping col">
-                        <h2>Free Shipping</h2>
+                        <h2 class="inline"><span class="icon-truck inline"></span>
+Free Shipping</h2>
                         <p>Orders over $49 ship free. For items under $49: If we can't ship it fast, it ships free. Always.</p>
                     </div>
                 </a>
                 <a href="#" class="hover-pink">
                     <div class="smile-guarantee col">
-                        <h2>Smile Guarantee</h2>
+                        <h2 class="inline"><span class="icon-smile inline"></span>
+Smile Guarantee</h2>
                         <p>We promise you'll love it. </br>
                             If you don't, we'll fix it.</p>
                     </div>
                 </a>
                 <a href="#" class="hover-orange">
                     <div class="free-returns col">
-                        <h2>Free returns</h2>
+                        <h2 class="inline"><span class="icon-email inline"></span> Free returns</h2>
                         <p>We want you to love your purchase. If you don't, send it back (for free) and get your money back. No questions asked.
                     </div>
                 </a>
