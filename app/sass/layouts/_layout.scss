@@ -22,7 +22,7 @@ nav,article,section,header,main,footer { display: block; }
 
 }
 
- .icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-open, .icon-right-dir {
+ .icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-open, .icon-right-dir, .icon-left-dir {
     font-family: 'fontello';
     speak: none;
     font-style: normal;
@@ -50,7 +50,16 @@ nav,article,section,header,main,footer { display: block; }
 .icon-smile:before { content: '\e807'; } /* '' */
 .icon-lock:before { content: '\e80b'; } /* '' */
 .icon-truck-1:before { content: '\e80a'; } /* '' */
-.icon-right-dir:before { content: '\e80d'; } /* '' */
+.icon-right-dir:before { content: '\e80d'; } /* '' */
+.icon-left-dir {
+    text-align: center;
+
+    &:before {
+        content: '\e80e';
+        font-size: 24px;
+        line-height: 0;
+        } /* '' */
+    }
 
 .icon-down-open {
     text-align: center;
@@ -122,7 +131,7 @@ body {
     max-width: 980px;
 }
 
-section {
+section, div {
     background-color: white;
     z-index: 0;
 }
@@ -136,6 +145,10 @@ ul {
     background-color: black;
     height: 55px;
     padding: 0px;
+
+    div {
+        background-color: black;
+    }
 }
 
 .menu {
@@ -143,7 +156,8 @@ ul {
     padding: 10px 15px;
 }
 
-.logo {
+div.logo {
+    background-color: transparent;
     padding-top: 15px;
     text-align: center;
     vertical-align: top;
@@ -155,6 +169,11 @@ nav {
     height: 40px;
     position: relative;
     width: 100%;
+
+    .icon-down-open, .icon-left-dir {
+        background-color: $dark-grey;
+        color: white;
+    }
 
     ul.categories {
         @include media (max-width 750px) {
@@ -390,12 +409,10 @@ li {
 
 .float-left {
     float:left;
-    position: relative;
 }
 
 .inline {
     display: inline-block;
-    position: relative;
 }
 
 .clear {
@@ -510,6 +527,24 @@ footer a:hover {
     width: 24%;
 }
 
+.two-of-five {
+    width: 39%;
+
+    @include media (max-width 630px) {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.three-of-five {
+    width: 60%;
+
+    @include media (max-width 630px) {
+        text-align: center;
+        width: 100%;
+    }
+}
+
 .one-of-six {
     width: 16.66%;
 
@@ -532,7 +567,11 @@ footer a:hover {
 
 .home, .fun {
     padding-bottom: 18px;
-    width: 57.9%;
+    width: 60.5%;
+
+    @include media (max-width 880px) {
+        width: 62%;
+    }
 
     @include media (max-width 560px) {
         width: 100%;
@@ -541,10 +580,10 @@ footer a:hover {
 
 .art, .furniture, .jewelry, .food {
     margin: 1px;
-    width: 41.65%;
+    width: 39%;
 
     @include media (max-width 880px) {
-        width: 41.2%;
+        width: 36.5%;
     }
 
     @include media(max-width 560px) {

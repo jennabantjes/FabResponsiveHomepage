@@ -29,7 +29,7 @@ nav, article, section, header, main, footer {
 }
 
 /* line 25, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
-.icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-open, .icon-right-dir {
+.icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1, .icon-down-open, .icon-right-dir, .icon-left-dir {
   font-family: 'fontello';
   speak: none;
   font-style: normal;
@@ -121,61 +121,73 @@ nav, article, section, header, main, footer {
   content: '\e80d';
 }
 
-/* '' */
-/* line 55, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* '' */
+/* line 54, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+.icon-left-dir {
+  text-align: center;
+  /* '' */
+}
+/* line 57, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+.icon-left-dir:before {
+  content: '\e80e';
+  font-size: 24px;
+  line-height: 0;
+}
+
+/* line 64, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .icon-down-open {
   text-align: center;
   /* '' */
 }
-/* line 58, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 67, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .icon-down-open:before {
   content: '\e80c';
   font-size: 24px;
   line-height: 0;
 }
 
-/* line 65, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 74, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .social-icon {
   font-size: 30px;
 }
-/* line 68, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 77, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .social-icon:hover {
   color: red;
   cursor: pointer;
 }
 
-/* line 88, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 97, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .light-grey {
   background-color: #efefef;
 }
 
-/* line 94, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 103, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .blue-text {
   color: #2ea5da;
 }
 
-/* line 98, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 107, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .orange-text {
   color: #ff3f00;
 }
 
-/* line 102, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 111, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .seafoam-text {
   color: #b4d5a2;
 }
 
-/* line 106, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 115, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a#open-menu {
   color: white;
 }
 
-/* line 112, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 121, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 html {
   position: relative;
   min-height: 100%;
 }
 
-/* line 117, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 126, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 body {
   background-color: #f2f2f2;
   font: 75%/1.231 "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -184,39 +196,44 @@ body {
   max-width: 980px;
 }
 
-/* line 125, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
-section {
+/* line 134, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+section, div {
   background-color: white;
   z-index: 0;
 }
 
-/* line 130, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 139, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 135, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 144, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .header {
   background-color: black;
   height: 55px;
   padding: 0px;
 }
+/* line 149, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+.header div {
+  background-color: black;
+}
 
-/* line 141, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 154, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .menu {
   color: white;
   padding: 10px 15px;
 }
 
-/* line 146, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
-.logo {
+/* line 159, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+div.logo {
+  background-color: transparent;
   padding-top: 15px;
   text-align: center;
   vertical-align: top;
 }
 
-/* line 152, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 166, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav {
   background-color: #303132;
   color: white;
@@ -224,13 +241,18 @@ nav {
   position: relative;
   width: 100%;
 }
+/* line 173, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+nav .icon-down-open, nav .icon-left-dir {
+  background-color: #303132;
+  color: white;
+}
 @media screen and (max-width: 750px) {
-  /* line 159, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 178, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   nav ul.categories {
     display: none;
   }
 }
-/* line 164, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 183, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav ul.categories li {
   border-right: 1px solid #666666;
   display: inline-block;
@@ -240,7 +262,7 @@ nav ul.categories li {
   width: 9.5%;
 }
 @media screen and (max-width: 750px) {
-  /* line 164, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 183, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   nav ul.categories li {
     background-color: white;
     border-bottom: 1px solid #efefef;
@@ -251,7 +273,7 @@ nav ul.categories li {
     padding: 10px;
     width: 100%;
   }
-  /* line 182, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 201, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   nav ul.categories li:after {
     content: '\e80d';
     font-family: 'fontello';
@@ -265,11 +287,11 @@ nav ul.categories li {
     transition: all 1s ease;
   }
 }
-/* line 192, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 211, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav ul.categories li:last-child {
   border-right: 0px;
 }
-/* line 198, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 217, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout {
   background-color: white;
   box-shadow: 1px 5px 5px #ccc;
@@ -278,28 +300,28 @@ nav div.flyout {
   position: absolute;
 }
 @media screen and (max-width: 750px) {
-  /* line 198, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 217, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   nav div.flyout {
     height: auto;
   }
 }
-/* line 209, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 228, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout span {
   border-right: 1px solid #666666;
   float: left;
 }
-/* line 213, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 232, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout span:last-child {
   border-right: 0;
 }
 @media screen and (max-width: 750px) {
-  /* line 209, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 228, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   nav div.flyout span {
     border-right: 0;
     width: 100%;
   }
 }
-/* line 223, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 242, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout h2, nav div.flyout li {
   background-color: white;
   border-bottom: 1px solid #efefef;
@@ -309,248 +331,246 @@ nav div.flyout h2, nav div.flyout li {
   padding: 10px;
   width: 100%;
 }
-/* line 233, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 252, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout h2 {
   color: black;
 }
-/* line 237, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 256, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout li:hover {
   background-color: #efefef;
 }
-/* line 241, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 260, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout .nav-image li {
   width: 49%;
 }
-/* line 244, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 263, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav div.flyout .nav-image li img {
   width: 100%;
 }
-/* line 250, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 269, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 nav .icon-down-open {
   display: none;
 }
 @media screen and (max-width: 750px) {
-  /* line 250, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 269, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   nav .icon-down-open {
     display: block;
   }
 }
 
-/* line 259, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 278, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .sub-nav li {
   display: inline-block;
   padding-top: 8px;
 }
 
-/* line 264, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 283, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .small-nav {
   display: none;
   text-align: center;
 }
 @media screen and (max-width: 700px) {
-  /* line 264, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 283, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .small-nav {
     display: block;
   }
 }
 
-/* line 273, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 292, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .policies {
   clear: both;
 }
-/* line 276, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 295, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .policies div {
   background-color: #efefef;
   height: 120px;
   width: 33%;
 }
 @media screen and (max-width: 700px) {
-  /* line 276, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 295, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .policies div {
     height: 150px;
     width: 32.9%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 276, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 295, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .policies div {
     width: 32.8%;
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 276, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 295, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .policies div {
     height: 200px;
     width: 32.7%;
   }
 }
 
-/* line 297, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 316, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .fab-us {
   padding: 8px 0 0 0;
   width: 10%;
 }
 
-/* line 304, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 323, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .home, .women, .men, .fun {
   margin: 1px;
 }
 
-/* line 308, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 327, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .no-padding {
   padding: 0px;
 }
 
-/* line 312, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 331, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 section {
   margin: 2px;
   padding: 14px;
 }
 
-/* line 317, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 336, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 div {
   padding: 14px;
 }
 
-/* line 321, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 340, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .featured {
   padding: 0px;
 }
-/* line 324, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 343, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .featured div.one-of-three {
   padding: 0px;
 }
 
-/* line 329, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 348, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .shipping-icons {
   padding: 0px;
 }
 
-/* line 333, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 352, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .shipping-icon {
   padding: 0;
   margin: 0 5px;
 }
 
-/* line 338, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 357, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .browse {
   padding: 2px;
 }
 
-/* line 342, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 361, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .home {
   width: 60%;
 }
 
-/* line 347, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 366, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 footer li {
   margin-bottom: 8px;
 }
-/* line 351, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 370, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 footer div {
   padding: 10px;
 }
 
-/* line 358, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 377, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .hidden {
   display: none;
 }
 
-/* line 362, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 381, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .meta {
   color: #666666;
   font-size: 11px;
   padding: 0px;
 }
-/* line 367, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 386, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .meta a {
   color: #666666;
 }
-/* line 370, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 389, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .meta a:hover {
   color: black;
 }
 
-/* line 376, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 395, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 380, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 399, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 li {
   list-style: none;
 }
 
-/* line 386, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 405, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .float-right {
   float: right;
   text-align: right;
 }
 
-/* line 391, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 410, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .float-left {
   float: left;
-  position: relative;
 }
 
-/* line 396, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 414, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .inline {
   display: inline-block;
-  position: relative;
 }
 
-/* line 401, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 418, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .clear {
   clear: both;
 }
 
-/* line 407, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 424, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a {
   color: #666666;
   text-decoration: none;
 }
 
-/* line 413, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 430, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a.hover-pink:hover h2 {
   color: white;
 }
-/* line 416, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 433, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a.hover-pink:hover div {
   background-color: #e882b6;
   color: white;
 }
 
-/* line 423, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 440, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a.hover-orange:hover h2 {
   color: white;
 }
-/* line 426, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 443, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a.hover-orange:hover div {
   background-color: #ff3f00;
   color: white;
 }
 
-/* line 433, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 450, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a.hover-blue:hover h2 {
   color: white;
 }
-/* line 436, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 453, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 a.hover-blue:hover div {
   background-color: #2ea5da;
   color: white;
 }
 
-/* line 442, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 459, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .sub-nav a:hover {
   text-decoration: underline;
 }
 
-/* line 446, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 463, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 footer a:hover {
   color: black;
 }
 
-/* line 450, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 467, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .red-hover {
   color: white;
   font-size: 18px;
@@ -559,181 +579,211 @@ footer a:hover {
   text-align: center;
   vertical-align: top;
 }
-/* line 458, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 475, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .red-hover:hover {
   background-color: red;
   color: white;
 }
 
-/* line 466, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 483, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .dotted-border {
   border: 1px dotted #303132;
 }
 
-/* line 472, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 489, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .col {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 477, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 494, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .one-of-one {
   width: 100%;
 }
 
-/* line 481, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 498, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .one-of-two {
   width: 49.78%;
 }
 @media screen and (max-width: 900px) {
-  /* line 481, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 498, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .one-of-two {
     width: 49.65%;
   }
 }
 @media screen and (max-width: 560px) {
-  /* line 481, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 498, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .one-of-two {
     width: 100%;
   }
 }
 
-/* line 493, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 510, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .one-of-three {
   width: 33%;
 }
 @media screen and (max-width: 650px) {
-  /* line 493, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 510, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .one-of-three {
     width: 100%;
   }
 }
 
-/* line 501, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 518, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .two-of-three, .four-of-six {
   width: 66%;
 }
 @media screen and (max-width: 650px) {
-  /* line 501, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 518, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .two-of-three, .four-of-six {
     width: 100%;
   }
 }
 
-/* line 509, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 526, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .one-of-four {
   width: 24%;
 }
 
-/* line 513, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 530, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+.two-of-five {
+  width: 39%;
+}
+@media screen and (max-width: 630px) {
+  /* line 530, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  .two-of-five {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* line 539, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+.three-of-five {
+  width: 60%;
+}
+@media screen and (max-width: 630px) {
+  /* line 539, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  .three-of-five {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* line 548, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .one-of-six {
   width: 16.66%;
 }
 @media screen and (max-width: 720px) {
-  /* line 513, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 548, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .one-of-six {
     width: 16.5%;
   }
 }
 @media screen and (max-width: 560px) {
-  /* line 513, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 548, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .one-of-six {
     width: 100%;
   }
 }
 
-/* line 525, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 560, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .one-of-twelve {
   width: 7%;
 }
 
-/* line 529, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 564, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .shipping-icon {
   width: 30%;
 }
 
-/* line 533, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 568, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .home, .fun {
   padding-bottom: 18px;
-  width: 57.9%;
+  width: 60.5%;
+}
+@media screen and (max-width: 880px) {
+  /* line 568, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  .home, .fun {
+    width: 62%;
+  }
 }
 @media screen and (max-width: 560px) {
-  /* line 533, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 568, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .home, .fun {
     width: 100%;
   }
 }
 
-/* line 542, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 581, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .art, .furniture, .jewelry, .food {
   margin: 1px;
-  width: 41.65%;
+  width: 39%;
 }
 @media screen and (max-width: 880px) {
-  /* line 542, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 581, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .art, .furniture, .jewelry, .food {
-    width: 41.2%;
+    width: 36.5%;
   }
 }
 @media screen and (max-width: 560px) {
-  /* line 542, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 581, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .art, .furniture, .jewelry, .food {
     width: 100%;
   }
 }
 
-/* line 555, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 594, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .most-popular {
   padding-bottom: 54px;
   width: 65.75%;
 }
 @media screen and (max-width: 560px) {
-  /* line 555, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 594, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .most-popular {
     width: 100%;
   }
 }
 
-/* line 566, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 605, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 h1 {
   font-size: 22px;
 }
 
-/* line 570, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 609, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 h2 {
   color: white;
   font-size: 14px;
   font-weight: 400;
 }
 
-/* line 576, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 615, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .social {
   text-align: center;
 }
-/* line 579, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 618, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .social p {
   font-size: 15px;
   line-height: 30px;
   padding: 14px;
 }
 
-/* line 586, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 625, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .shipping-text {
   font-size: 30px;
 }
-/* line 588, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 627, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .shipping-text div {
   padding: 0;
   width: 100%;
 }
 @media screen and (max-width: 825px) {
-  /* line 586, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 625, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .shipping-text {
     font-size: 24px;
   }
 }
 
-/* line 600, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 639, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .meta-top {
   font-size: 13px;
   line-height: 0px;
@@ -742,20 +792,20 @@ h2 {
   vertical-align: top;
 }
 
-/* line 608, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 647, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .login {
   color: #666666;
   font-size: 14px;
   line-height: 23px;
 }
 @media screen and (max-width: 915px) {
-  /* line 608, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+  /* line 647, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
   .login {
     width: 9%;
   }
 }
 
-/* line 618, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 657, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .policies h2 {
   color: #666666;
   font-size: 22px;
@@ -763,7 +813,7 @@ h2 {
   margin: 0;
 }
 
-/* line 625, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 664, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 footer h2 {
   color: #666666;
   font-size: 12px;
@@ -771,17 +821,17 @@ footer h2 {
   line-height: 30px;
 }
 
-/* line 634, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 673, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 img {
   width: 100%;
 }
 
-/* line 638, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 677, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 header img {
   width: auto;
 }
 
-/* line 644, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 683, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 button {
   background-color: #dd0017;
   border: none;
@@ -793,7 +843,7 @@ button {
   padding: 7px 10px;
 }
 
-/* line 657, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 696, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 input[type="search"] {
   background: url("../../images/search.png") no-repeat 7px 4px white;
   border: 0px;
@@ -806,28 +856,28 @@ input[type="search"] {
   width: 100%;
 }
 
-/* line 671, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 710, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 form {
   padding-top: 10px;
   vertical-align: top;
 }
 
-/* line 678, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 717, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .title-top {
   background-color: black;
 }
-/* line 681, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 720, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .title-top h1 {
   color: white;
   line-height: 0;
   opacity: 1;
 }
-/* line 687, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 726, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .title-top h2 {
   line-height: 10px;
 }
 
-/* line 692, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
+/* line 731, /Users/apprentice5/Sites/Fab/app/sass/layouts/_layout.scss */
 .title-bottom {
   background-color: black;
   bottom: 17px;
