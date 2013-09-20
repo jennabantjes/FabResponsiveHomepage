@@ -6,18 +6,19 @@
 
         <title>Fab Responsive Home</title>
 
-        <link href="styles/styles.css" rel="stylesheet" type="text/css">
+        <link href="../../../public/stylesheets/app.css" rel="stylesheet" type="text/css">
 
     </head>
     <body>
-        <header>
+
+                <header>
             <div class="meta">
-                <img src="images/smile-top.png">
+                <img src="../../images/smile-top.png">
                 <p class="meta-top inline">Free Shipping. Free Returns. Smile Guarantee.</p>
                 <span class="float-right">
-                    <img src="images/phone.png">
+                    <img src="../../images/phone.png">
                     <p class="meta-top inline">1-877-463-4322</p>
-                    <img src="images/mail.png">
+                    <img src="../../images/mail.png">
                     <p class="meta-top inline">Email Us</p>
                 </span>
             </div>
@@ -28,7 +29,7 @@
                 </form>
                 <a href="#">
                     <div class="logo inline one-of-two">
-                        <img src="images/logo.png">
+                        <img src="../../images/logo.png">
                     </div>
                 </a>
                 <a href="#"><div class="inline red-hover one-of-twelve"><span class="icon-smile"></span></div></a>
@@ -49,6 +50,9 @@
                     <li>Fun</li>
                 </ul>
             </nav>
+            <nav class="small-nav one-of-one">
+                <span class="icon-menu"></span>
+            </nav>
         </header>
 
         <div class="dotted-border no-padding">
@@ -62,7 +66,7 @@
             </section>
 
             <section class="rotator dotted-border">
-                <img src="images/ad-1.png">
+                <img src="../../images/ad-1.png">
             </section>
 
             <section class="featured">
@@ -71,20 +75,20 @@
                         <h1>Black+Blum</h1>
                         <h2>Inspired Everyday Accessorites</h2>
                     </div>
-                    <img src="images/featured-1.png">
+                    <img src="../../images/featured-1.png">
                 </div>
                 <div class="one-of-three col dotted-border">
                     <div>
                         <div class="title-top">
                             <h1>New Events</h1>
                         </div>
-                        <img src="images/new-event.png">
+                        <img src="../../images/new-event.png">
                     </div>
                     <div>
                         <div class="title-top">
                             <h1>Exclusively Fab</h1>
                         </div>
-                        <img src="images/exclusive.png">
+                        <img src="../../images/exclusive.png">
                     </div>
                 </div>
             </section>
@@ -92,11 +96,11 @@
             <section class="free-shipping-callout dotted-border">
                 <div class="shipping-icons one-of-two col">
                     <div class="shipping-icon inline">
-                        <img src="images/shipping.png">
+                        <img src="../../images/shipping.png">
                     </div><div class="shipping-icon  inline">
-                        <img src="images/returns.png">
+                        <img src="../../images/returns.png">
                     </div><div class="shipping-icon inline">
-                        <img src="images/smile.png">
+                        <img src="../../images/smile.png">
                     </div>
                 </div>
                 <div class="shipping-text one-of-two col">
@@ -114,35 +118,35 @@
 
                 <div class="home float-left dotted-border">
                     <div class="title-bottom">Home</div>
-                    <img src="images/home.png">
+                    <img src="../../images/home.png">
                 </div>
                 <div class="art float-left dotted-border">
                     <div class="title-bottom">Art</div>
-                    <img src="images/art.png">
+                    <img src="../../images/art.png">
                 </div>
                 <div class="furniture float-left dotted-border">
                     <div class="title-bottom">Furniture</div>
-                    <img src="images/furniture.png">
+                    <img src="../../images/furniture.png">
                 </div>
                 <div class="women one-of-two float-left dotted-border">
                     <div class="title-bottom">Women</div>
-                    <img src="images/women.png">
+                    <img src="../../images/women.png">
                 </div>
                 <div class="men one-of-two float-left dotted-border">
                     <div class="title-bottom">Men</div>
-                    <img src="images/men.png">
+                    <img src="../../images/men.png">
                 </div>
                 <div class="fun float-left dotted-border">
                     <div class="title-bottom">Fun</div>
-                    <img src="images/fun.png">
+                    <img src="../../images/fun.png">
                 </div>
                 <div class="jewelry float-left dotted-border">
                     <div class="title-bottom">Jewelry</div>
-                    <img src="images/jewelry.png">
+                    <img src="../../images/jewelry.png">
                 </div>
                 <div class="food float-left dotted-border">
                     <div class="title-bottom">Food</div>
-                    <img src="images/food.png">
+                    <img src="../../images/food.png">
                 </div>
 
             <section class="policies dotted-border clear">
@@ -169,7 +173,7 @@ Smile Guarantee</h2>
                 </a>
             </section>
 
-            <footer class="meta dotted-border clear">
+            <footer class="meta clear">
                 <section class="sub-nav dotted-border one">
                     <ul class="two-of-three col">
                         <li><a href="#">Smile Guarantee</a></li>
@@ -185,8 +189,8 @@ Smile Guarantee</h2>
                         <li><a href="#">Terms</a></li>
                         <li><a href="#">Privacy</a></li>
                     </ul>
-                    <div class="one-of-six col">Fab US</div>
-                    <div class="social-small one-of-six col">
+                    <div class="fab-us col">Fab US</div>
+                    <div class="social-small one-of-six no-padding col">
                         <span class="icon-twitter-circled social-icon"></span>
                         <span class="icon-facebook-circled social-icon"></span>
                         <p class="inline">Fab.com &copy; 2013</p>
@@ -271,5 +275,11 @@ Smile Guarantee</h2>
             </footer>
         </div>
 
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+         --><script src="../../javascripts/app.js"></script>
+
     </body>
 </html>
+

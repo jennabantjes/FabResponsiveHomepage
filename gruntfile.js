@@ -83,8 +83,8 @@ module.exports = function(grunt) {
         tasks: ['jshint']
       },
       jsBuilder: {
-        files: ['javascripts/**/*.js'],
-        tasks: ['concat', 'uglify', 'copy']
+        files: ['app/javascripts/**/*.js'],
+        tasks: ['concat', 'copy']
       },
       jekyll: {
         files: ['app/jekyll/**/*.html','!app/jekyll/_site/**/*.html'],

@@ -1,3 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav,article,section,header,main,footer { display: block; }
+
+// FONTELLO //
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../../fonts/fontello.eot');
+  src: url('../../fonts/fontello.eot?14191376#iefix') format('embedded-opentype'),
+       url('../../fonts/fontello.woff') format('woff'),
+       url('../../fonts/fontello.ttf') format('truetype'),
+       url('../../fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+ .icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1 {
+    font-family: 'fontello';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-email:before { content: '\e808'; } /* '' */
+.icon-menu:before {
+    content: '\e800';
+    font-size: 24px;
+    } /* '' */
+.icon-cancel:before { content: '\e802'; } /* '' */
+.icon-truck:before { content: '\e809'; } /* '' */
+.icon-bus:before { content: '\e806'; } /* '' */
+.icon-menu-1:before { content: '\e801'; } /* '' */
+.icon-hash:before { content: '\e803'; } /* '' */
+.icon-facebook-circled:before { content: '\e805'; } /* '' */
+.icon-twitter-circled:before { content: '\e804'; } /* '' */
+.icon-smile:before { content: '\e807'; } /* '' */
+.icon-lock:before { content: '\e80b'; } /* '' */
+.icon-truck-1:before { content: '\e80a'; } /* '' */
+
+.social-icon {
+    font-size: 30px;
+
+    &:hover {
+        color: red;
+        cursor: pointer;
+    }
+}
+
 // COLORS //
 
 $light-grey: #efefef;
@@ -32,11 +92,16 @@ $red: #dd0017;
 
 // LAYOUT //
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font: 75%/1.231 "Helvetica Neue",Helvetica,Arial,sans-serif;
     margin: auto;
     padding: auto;
-    max-width: 960px;
+    max-width: 980px;
 }
 
 ul {
@@ -52,7 +117,6 @@ ul {
 
 .menu {
     color: white;
-    font-size: 24px;
     padding: 10px 15px;
 }
 
@@ -65,6 +129,7 @@ ul {
 nav {
     background-color: $dark-grey;
     color: white;
+    height: 40px;
     width: 100%;
 
     li {
@@ -83,7 +148,11 @@ nav {
 
 .sub-nav li {
     display: inline-block;
-    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.small-nav  {
+    text-align: center;
 }
 
 .policies {
@@ -91,9 +160,14 @@ nav {
 
     div {
         background-color: $light-grey;
-        height: 90px;
-        width: 30%;
+        height: 120px;
+        width: 33%;
     }
+}
+
+.fab-us {
+    padding: 8px 0 0 0;
+    width: 10%;
 }
 
 // MARGINS & PADDING //
@@ -128,13 +202,8 @@ div {
 }
 
 .shipping-icon {
-    &:first-child {
-        padding: 0;
-    }
-
-    &:last-child {
-        padding: 0;
-    }
+    padding: 0;
+    margin: 0 5px;
 }
 
 .browse {
@@ -156,6 +225,10 @@ footer {
 }
 
 // UNIVERSAL //
+
+.hidden {
+    display: none;
+}
 
 .meta {
     color: $grey;
@@ -255,6 +328,7 @@ footer a:hover {
 
     &:hover {
         background-color: red;
+        color: white;
     }
 }
 
@@ -277,15 +351,35 @@ footer a:hover {
 }
 
 .one-of-two {
-    width: 46.65%;
+    width: 49.78%;
+
+    @include media(max-width 800px) {
+        width: 49.65%;
+    }
+
+    @include media(max-width 560px) {
+        width: 100%;
+    }
 }
 
 .one-of-three {
-    width: 33%;
+    width: 33.15%;
+
+    @include media(max-width 840px) {
+        width: 33%;
+    }
+
+    @include media(max-width 650px) {
+        width: 100%;
+    }
 }
 
 .two-of-three, .four-of-six {
-    width: 63%;
+    width: 66.45%;
+
+    @include media(max-width 650px) {
+        width: 100%;
+    }
 }
 
 .one-of-four {
@@ -297,7 +391,7 @@ footer a:hover {
 }
 
 .one-of-twelve {
-    width: 8%;
+    width: 7%;
 }
 
 .shipping-icon {
@@ -306,15 +400,17 @@ footer a:hover {
 
 .home, .fun {
     padding-bottom: 18px;
-    width: 54.75%;
+    width: 57.9%;
 }
 
 .art, .furniture, .jewelry, .food {
-    width: 38.65%;
+    margin: 1px;
+    width: 41.65%;
 }
 
 .most-popular {
-    width: 59%;
+    padding-bottom: 54px;
+    width: 65.75%;
 }
 
 // TYPOGRAPHY //
@@ -448,50 +544,5 @@ form {
     position: absolute;
 }
 
-// FONTELLO //
 
-@font-face {
-  font-family: 'fontello';
-  src: url('../fonts/fontello.eot');
-  src: url('../fonts/fontello.eot?14191376#iefix') format('embedded-opentype'),
-       url('../fonts/fontello.woff') format('woff'),
-       url('../fonts/fontello.ttf') format('truetype'),
-       url('../fonts/fontello.svg#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
-
- .icon-email, .icon-menu, .icon-cancel, .icon-truck, .icon-bus, .icon-menu-1, .icon-hash, .icon-facebook-circled, .icon-twitter-circled, .icon-smile, .icon-lock, .icon-truck-1 {
-    font-family: 'fontello';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-}
-
-.icon-email:before { content: '\e808'; } /* '' */
-.icon-menu:before { content: '\e800'; } /* '' */
-.icon-cancel:before { content: '\e802'; } /* '' */
-.icon-truck:before { content: '\e809'; } /* '' */
-.icon-bus:before { content: '\e806'; } /* '' */
-.icon-menu-1:before { content: '\e801'; } /* '' */
-.icon-hash:before { content: '\e803'; } /* '' */
-.icon-facebook-circled:before { content: '\e805'; } /* '' */
-.icon-twitter-circled:before { content: '\e804'; } /* '' */
-.icon-smile:before { content: '\e807'; } /* '' */
-.icon-lock:before { content: '\e80b'; } /* '' */
-.icon-truck-1:before { content: '\e80a'; } /* '' */
-
-.social-icon {
-    font-size: 30px;
-
-    &:hover {
-        color: red;
-        cursor: pointer;
-    }
-}
 
