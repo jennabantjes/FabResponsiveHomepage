@@ -161,6 +161,10 @@ div.logo {
     padding-top: 15px;
     text-align: center;
     vertical-align: top;
+
+    @include media(max-width 565px){
+        width: 48%;
+    }
 }
 
 nav {
@@ -561,6 +565,10 @@ footer a:hover {
     width: 7%;
 }
 
+.search {
+    width: 16.5%;
+}
+
 .shipping-icon {
     width: 30%;
 }
@@ -650,7 +658,8 @@ h2 {
     line-height: 23px;
 
     @include media(max-width 915px) {
-        width: 9%;
+        line-height: 12px;
+        width: 10%;
     }
 }
 
